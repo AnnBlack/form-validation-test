@@ -1,0 +1,302 @@
+.page-main {
+  width: 100%; }
+
+.page-main__wrapper {
+  padding: 20px; }
+
+.form {
+  width: 350px;
+  min-height: 211px;
+  margin: 0 auto;
+  padding-top: 10px;
+  background-color: white;
+  border-radius: 3px;
+  border-bottom: 1px solid grey;
+  box-shadow: 0px 2px 0px 0px grey; }
+
+.form__open {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px; }
+
+.form__open--open {
+  display: block; }
+
+.form__open--closed {
+  display: none; }
+
+.form--opened {
+  display: block; }
+
+.form--closed {
+  display: none; }
+
+.form::after {
+  content: '';
+  display: block;
+  box-shadow: 0px 2px 0px 0px grey; }
+
+.form__wrapper {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 35px;
+  position: relative; }
+
+.form__close-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  background-color: #cccccc; }
+
+.form__close-icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("img/cancel.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-x: 5px;
+  background-position-y: 5px; }
+
+.form__img {
+  width: 60px;
+  height: 55px;
+  display: block;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  /*	border: 1px solid #d0d0d0;*/
+  border-radius: 50%;
+  box-shadow: -1px -1px 5px 0px #d0d0d0; }
+
+.form__img img {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 4px; }
+
+.form__img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  background-image: url("img/user-icon-shadow.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position-x: 3px;
+  background-position-y: 3px; }
+
+.form__input {
+  width: 100%;
+  height: 30px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding-left: 40px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 14px;
+  vertical-align: 17px;
+  position: relative;
+  cursor: pointer; }
+
+.form__icon-label {
+  font-size: 0;
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 30px;
+  border-right: 1px solid lightgrey;
+  margin-top: -40px; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 30px;
+  border-top: 5px solid transparent;
+  border-left: 8px solid white;
+  border-bottom: 5px solid transparent; }
+
+.triangle:before {
+  content: '';
+  width: 8px;
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: -7px;
+  border-top: 0.25px solid #ada9a9;
+  -webkit-transform: rotate(28deg);
+  /*  transform: rotate(-28deg);*/ }
+
+.triangle:after {
+  content: '';
+  width: 8px;
+  display: block;
+  position: absolute;
+  top: 1.3px;
+  left: -7px;
+  border-top: 0.25px solid #aaa;
+  -webkit-transform: rotate(-34deg);
+  transform: rotate(-34deg); }
+
+.form__icon-label::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 9px 7px; }
+
+.form__icon-label--user::before {
+  background-image: url("img/user-icon.png"); }
+
+.form__icon-label--pass::before {
+  background-image: url("img/key.png"); }
+
+.form__link {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: grey;
+  margin-top: -5px;
+  margin-bottom: 25px; }
+
+.form__btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  width: 60px;
+  height: 25px;
+  background-color: #cccccc;
+  border: none;
+  border-bottom: 3px solid #bcbcbc;
+  border-radius: 3px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer; }
+
+/* IE8 */
+.form__checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px; }
+
+.form__checkbox + label {
+  cursor: pointer; }
+
+.form__checkbox:not(checked) {
+  position: absolute;
+  opacity: 0; }
+
+.form__checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 55px;
+  margin-left: 15px; }
+
+.form__checkbox:not(checked) + label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 15px;
+  border-radius: 13px;
+  background: #CDD1DA;
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2); }
+
+.form__checkbox:not(checked) + label::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  transition: all .2s; }
+
+.form__checkbox:checked + label::before {
+  background: #83bd5b; }
+
+.form__checkbox:checked + label::after {
+  left: 26px; }
+
+.form__checkbox:focus + label::before {
+  box-shadow: 0 0 0 3px rgba(255, 255, 0, 0.5); }
+
+.form__checkbox-label {
+  font-size: 14px;
+  color: grey; }
+
+.form__extra {
+  text-align: center;
+  margin-top: 15px;
+  color: grey;
+  font-size: 16px; }
+
+.form__extra-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #72985a;
+  margin-left: 5px; }
+
+#email-error {
+  position: absolute;
+  width: 250px;
+  top: 55px;
+  font-size: 12px;
+  color: red;
+  border: none; }
+
+#password-error {
+  position: absolute;
+  width: 250px;
+  top: 107px;
+  font-size: 12px;
+  color: red;
+  border: none; }
+
+.error {
+  border: 1px solid red;
+  border-radius: 3px; }
+
+input:required:valid {
+  border-color: green; }
+
+@font-face {
+  font-family: Roboto Regular;
+  src: url(fonts/Roboto-Regular.ttf); }
+@font-face {
+  font-family: Roboto Light;
+  src: url(fonts/Roboto-Light.ttf); }
+@font-face {
+  font-family: Roboto Bold;
+  src: url(fonts/Roboto-Bold.ttf); }
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Regular"; }
+
+.body-background {
+  background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 200%; }
+
+/*# sourceMappingURL=output.css.map */
